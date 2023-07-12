@@ -14,7 +14,9 @@ function App() {
 
   const fetchProducts = async () => {
     try {
-      const response = await axios.get("https://kmi-products-api/getalldata");
+      const response = await axios.get(
+        "https://kmi-products-api.onrender.com/postdata"
+      );
       setProducts(response.data);
     } catch (error) {
       console.error(error);
